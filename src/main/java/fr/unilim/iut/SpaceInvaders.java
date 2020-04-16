@@ -67,8 +67,11 @@ public class SpaceInvaders {
     }
 
     public void deplacerVaisseauVersLaGauche() {
-        if (vaisseau.abscisseLaPlusAGauche() > PREMIERE_MARQUE_PAR_LIGNE) {
+        if (0 < vaisseau.abscisseLaPlusAGauche()) {
             vaisseau.deplacerVersLaGauche();
+        }
+        if (!estDansEspaceJeu(vaisseau.abscisseLaPlusAGauche(),vaisseau.ordonneeLaPlusHaute())) {
+            vaisseau.positionner(0,vaisseau.ordonneeLaPlusHaute());
         }
     }
 
@@ -89,5 +92,11 @@ public class SpaceInvaders {
             throw new DebordementEspaceJeuException("Le vaisseau déborde de l'espace jeu vers le bas à cause de sa hauteur");
 
         vaisseau = new Vaisseau(dimension, position, vitesse);
+    }
+
+    public void initialiserJeu() {
+        Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
+        Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
+        positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
     }
 }
