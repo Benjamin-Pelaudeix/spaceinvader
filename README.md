@@ -23,7 +23,7 @@ _Fonctionnalités implémentées :_
       
 _Modélisation UML :_
 
-![Diagramme S27](/img/spaceinvaders.png)
+![Diagramme S27](/img/spaceinvadersS27.png)
 
 _Nuage de mots :_
 
@@ -48,7 +48,7 @@ _Fonctionalités implémentées :_
   
 _Modélisation UML :_
 
-![Diagramme_S28](/img/spaceinvaders_S28.png)
+![Diagramme_S28](/img/spaceinvadersS28.png)
 
 _Nuage de mots :_
 
