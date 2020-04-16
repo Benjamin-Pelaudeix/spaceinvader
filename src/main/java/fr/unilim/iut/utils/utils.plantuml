@@ -2,18 +2,18 @@
 
 title __UTILS's Class Diagram__\n
 
-  namespace fr.unilim.iut.spaceinvaders {
+  namespace fr.unilim.iut {
     namespace utils {
-      class fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException {
+      class fr.unilim.iut.utils.DebordementEspaceJeuException {
           + DebordementEspaceJeuException()
       }
     }
   }
   
 
-  namespace fr.unilim.iut.spaceinvaders {
+  namespace fr.unilim.iut {
     namespace utils {
-      class fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException {
+      class fr.unilim.iut.utils.HorsEspaceJeuException {
           + HorsEspaceJeuException()
       }
     }

@@ -1,9 +1,23 @@
 @startuml
 
-title __SPACEINVADERS's Class Diagram__\n
+title __IUT's Class Diagram__\n
 
-  namespace fr.unilim.iut.spaceinvaders {
-    class fr.unilim.iut.spaceinvaders.Dimension {
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Constante {
+        {static} + ESPACEJEU_HAUTEUR : int
+        {static} + ESPACEJEU_LONGUEUR : int
+        {static} + MARQUE_FIN_LIGNE : char
+        {static} + MARQUE_VAISSEAU : char
+        {static} + MARQUE_VIDE : char
+        {static} + VAISSEAU_HAUTEUR : int
+        {static} + VAISSEAU_LONGUEUR : int
+        {static} + VAISSEAU_VITESSE : int
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Dimension {
         ~ hauteur : int
         ~ longueur : int
         + Dimension()
@@ -13,8 +27,8 @@ title __SPACEINVADERS's Class Diagram__\n
   }
   
 
-  namespace fr.unilim.iut.spaceinvaders {
-    class fr.unilim.iut.spaceinvaders.Position {
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Position {
         ~ x : int
         ~ y : int
         + Position()
@@ -26,8 +40,8 @@ title __SPACEINVADERS's Class Diagram__\n
   }
   
 
-  namespace fr.unilim.iut.spaceinvaders {
-    class fr.unilim.iut.spaceinvaders.SpaceInvaders {
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.SpaceInvaders {
         {static} + MARQUE_FIN_LIGNE : char
         {static} + MARQUE_VAISSEAU : char
         {static} + MARQUE_VIDE : char
@@ -40,6 +54,7 @@ title __SPACEINVADERS's Class Diagram__\n
         + deplacerVaisseauVersLaDroite()
         + deplacerVaisseauVersLaGauche()
         + estDansEspaceJeu()
+        + initialiserJeu()
         + positionnerUnNouveauVaisseau()
         + recupererEspaceJeuDansChaineASCII()
         + recupererMarqueDeLaPosition()
@@ -48,8 +63,10 @@ title __SPACEINVADERS's Class Diagram__\n
   }
   
 
-  namespace fr.unilim.iut.spaceinvaders {
-    class fr.unilim.iut.spaceinvaders.Vaisseau {
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Vaisseau {
+        - vitesse : int
+        + Vaisseau()
         + Vaisseau()
         + Vaisseau()
         + Vaisseau()
@@ -59,6 +76,7 @@ title __SPACEINVADERS's Class Diagram__\n
         + deplacerVersLaGauche()
         + estAbscisseCouverte()
         + estOrdonneeCouverte()
+        + longueur()
         + occupeLaPosition()
         + ordonneeLaPlusBasse()
         + ordonneeLaPlusHaute()
@@ -67,9 +85,9 @@ title __SPACEINVADERS's Class Diagram__\n
   }
   
 
-  fr.unilim.iut.spaceinvaders.SpaceInvaders o-- fr.unilim.iut.spaceinvaders.Vaisseau : vaisseau
-  fr.unilim.iut.spaceinvaders.Vaisseau o-- fr.unilim.iut.spaceinvaders.Dimension : dimension
-  fr.unilim.iut.spaceinvaders.Vaisseau o-- fr.unilim.iut.spaceinvaders.Position : origine
+  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
+  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Dimension : dimension
+  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Position : origine
 
 
 right footer
