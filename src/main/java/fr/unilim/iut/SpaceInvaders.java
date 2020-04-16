@@ -1,7 +1,7 @@
-package fr.unilim.iut.spaceinvaders;
+package fr.unilim.iut;
 
-import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
-import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+import fr.unilim.iut.utils.DebordementEspaceJeuException;
+import fr.unilim.iut.utils.HorsEspaceJeuException;
 
 public class SpaceInvaders {
 

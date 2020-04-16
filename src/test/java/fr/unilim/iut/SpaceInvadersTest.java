@@ -1,10 +1,10 @@
-package fr.unilim.iut.spaceinvaders;
+package fr.unilim.iut;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
-import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+import fr.unilim.iut.utils.DebordementEspaceJeuException;
+import fr.unilim.iut.utils.HorsEspaceJeuException;
 import org.junit.Before;
 import org.junit.Test;
 
