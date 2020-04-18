@@ -8,8 +8,8 @@ Implémentation du projet space invaders en TDD à partir de https://github.com/
 
 - [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-27)
 - [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-28)
-- Semaine 29
--  [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvaders#glossaire)
+- [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-29)
+- [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvaders#glossaire)
 
 ### Semaine 27
 
