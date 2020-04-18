@@ -60,7 +60,22 @@ Aucune difficulté pour ce TP.
 
 ### Semaine 29
 
-TP jeudi de 10h à 12h
+_Fonctionnalités implémentées :_
+
+* Fonctionnalité n°3 :
+   **Critères d'acceptances** : Pourvoir choisir la vitesse du vaisseau afin qu'il puisse se déplacer à une vitesse convenable dans l'application graphique.
+   
+_Modélisation UML :_
+
+
+
+_Nuage de mots :_
+
+
+
+_Difficultés rencontrées :_
+
+J'ai eu un problème qui m'a été remonté concernant mon .gitignore. En essayant de le corriger, mon projet a été corrompu. J'ai dû créer un nouveau dépôt GitHub pour héberger mon projet.
 
 ### Glossaire
 
@@ -69,3 +84,5 @@ TP jeudi de 10h à 12h
 ``Envahisseur`` est un ennemi qui apparaît à l'écran, se déplace automatiquement et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
 
 ``Missile`` est un projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
+
+``Vitesse`` est, pour ce projet, une vitesse instantanée définie comme un vecteur optenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
