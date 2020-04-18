@@ -1,5 +1,11 @@
 package fr.unilim.iut;
 
+import sun.java2d.windows.GDIRenderer;
+
+import java.security.DigestException;
+
+import static fr.unilim.iut.Direction.HAUT;
+
 public abstract class Sprite {
     protected int vitesse;
     Position origine;
@@ -31,10 +37,6 @@ public abstract class Sprite {
         return this.origine.abscisse()+this.dimension.longueur()-1;
     }
 
-    public void deplacerVersLaDroite() {
-        this.origine.changerAbscisse(this.origine.abscisse()+vitesse);
-    }
-
     public int abscisseLaPlusAGauche() {
         return this.origine.abscisse();
     }
@@ -43,8 +45,12 @@ public abstract class Sprite {
         return this.origine.ordonnee();
     }
 
-    public void deplacerVersLaGauche() {
-        this.origine.changerAbscisse(this.origine.abscisse()-vitesse);
+    public void deplacerVerticalementVers(Direction direction) {
+        this.origine.changerOrdonnee(this.origine.ordonnee()+direction.valeur()*vitesse);
+    }
+
+    public void deplacerHorizontalementVers(Direction direction) {
+        this.origine.changerAbscisse(this.origine.abscisse()+direction.valeur()*vitesse);
     }
 
     public void positionner(int x, int y) {
@@ -54,5 +60,9 @@ public abstract class Sprite {
 
     public int longueur() {
         return this.dimension.longueur();
+    }
+
+    public int hauteur() {
+        return this.dimension.hauteur();
     }
 }
