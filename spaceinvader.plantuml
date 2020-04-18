@@ -27,6 +27,12 @@ title __SPACEINVADER's Class Diagram__\n
   
 
   namespace fr.unilim.iut {
+    abstract class fr.unilim.iut.Sprite {
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
     class fr.unilim.iut.Vaisseau {
     }
   }
@@ -49,8 +55,9 @@ title __SPACEINVADER's Class Diagram__\n
   
 
   fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
-  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Dimension : dimension
-  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Position : origine
+  fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
+  fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine
+  fr.unilim.iut.Vaisseau -up-|> fr.unilim.iut.Sprite
 
 
 right footer

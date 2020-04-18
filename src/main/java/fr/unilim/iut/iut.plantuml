@@ -64,12 +64,9 @@ title __IUT's Class Diagram__\n
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Vaisseau {
-        - vitesse : int
-        + Vaisseau()
-        + Vaisseau()
-        + Vaisseau()
-        + Vaisseau()
+    abstract class fr.unilim.iut.Sprite {
+        # vitesse : int
+        + Sprite()
         + abscisseLaPlusADroite()
         + abscisseLaPlusAGauche()
         + deplacerVersLaDroite()
@@ -85,9 +82,17 @@ title __IUT's Class Diagram__\n
   }
   
 
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Vaisseau {
+        + Vaisseau()
+    }
+  }
+  
+
   fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
-  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Dimension : dimension
-  fr.unilim.iut.Vaisseau o-- fr.unilim.iut.Position : origine
+  fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
+  fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine
+  fr.unilim.iut.Vaisseau -up-|> fr.unilim.iut.Sprite
 
 
 right footer
