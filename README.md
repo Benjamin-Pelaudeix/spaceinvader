@@ -80,22 +80,28 @@ J'ai eu un problème qui m'a été remonté concernant mon .gitignore. En essaya
 
 ### Vacances
 
+   #### 18/04/2020
 _Fonctionnalités implémentées :_
 
+* Fonctionnalité n°4 :
+   **Critères d'acceptances** : Pourvoir tirer un missile depuis le vaisseau et le faire changer de position de manière autonome.
 
+* Spike "Moteur Graphique" :
+   **Critères d'acceptances** : Ajouter à notre mini-projet un moteur graphique.
 
 _Modélisation UML :_
 
+![Diagramme](/img/spaceinvader_vacs.png)
 
 
 _Nuage de mots :_
 
-
+![Nuage de mots](/img/motsVacF4.PNG)
+![Nuage de mots avec moteur graphique](/img/motsVacs.PNG)
 
 _Difficultés rencontrées :_
 
-
-
+Aucune
 
 ### Glossaire
 
@@ -106,3 +112,5 @@ _Difficultés rencontrées :_
 ``Missile`` est un projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
 ``Vitesse`` est, pour ce projet, une vitesse instantanée définie comme un vecteur optenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
+
+``Sprite`` est, dans les jeux vidéos, un élément graphique qui peut se déplacer sur l'écran.
