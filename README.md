@@ -6,10 +6,11 @@ Implémentation du projet space invaders en TDD à partir de https://github.com/
 
 ### Sommaire 
 
-- [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-27)
-- [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-28)
-- [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-29)
-- [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvaders#glossaire)
+- [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-27)
+- [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
+- [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
+- [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
+- [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Semaine 27
 
@@ -76,6 +77,25 @@ _Nuage de mots :_
 _Difficultés rencontrées :_
 
 J'ai eu un problème qui m'a été remonté concernant mon .gitignore. En essayant de le corriger, mon projet a été corrompu. J'ai dû créer un nouveau dépôt GitHub pour héberger mon projet.
+
+### Vacances
+
+_Fonctionnalités implémentées :_
+
+
+
+_Modélisation UML :_
+
+
+
+_Nuage de mots :_
+
+
+
+_Difficultés rencontrées :_
+
+
+
 
 ### Glossaire
 
