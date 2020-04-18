@@ -1,16 +1,15 @@
 package fr.unilim.iut;
 
+import fr.unilim.iut.moteurjeu.Commande;
+import fr.unilim.iut.moteurjeu.Jeu;
 import fr.unilim.iut.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.utils.HorsEspaceJeuException;
 import fr.unilim.iut.utils.MissileException;
 
 import static fr.unilim.iut.Constante.MARQUE_MISSILE;
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu {
 
-    public static final char MARQUE_VAISSEAU = 'V';
-    public static final char MARQUE_VIDE = '.';
-    public static final char MARQUE_FIN_LIGNE = '\n';
     public static final int PREMIERE_MARQUE_PAR_LIGNE = 0;
     int longueur;
     int hauteur;
@@ -33,7 +32,7 @@ public class SpaceInvaders {
             for (int x = 0; x < longueur; x++) {
                 espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
             }
-            espaceDeJeu.append(MARQUE_FIN_LIGNE);
+            espaceDeJeu.append(Constante.MARQUE_FIN_LIGNE);
         }
         return espaceDeJeu.toString();
     }
@@ -41,13 +40,13 @@ public class SpaceInvaders {
     public char recupererMarqueDeLaPosition(int x, int y) {
         char marque;
         if (this.aUnVaisseauQuiOccupeLaPosition(x, y)) {
-            marque = MARQUE_VAISSEAU;
+            marque = Constante.MARQUE_VAISSEAU;
         }
         else if (this.aUnMissileQuiOccupeLaPosition(x,y)){
             marque = MARQUE_MISSILE;
         }
         else {
-            marque = MARQUE_VIDE;
+            marque = Constante.MARQUE_VIDE;
         }
         return marque;
     }
@@ -56,7 +55,7 @@ public class SpaceInvaders {
         return this.aUnMissile() && missile.occupeLaPosition(x,y);
     }
 
-    private boolean aUnMissile() {
+    public boolean aUnMissile() {
         return missile!=null;
     }
 
@@ -123,6 +122,35 @@ public class SpaceInvaders {
     }
 
     public void deplacerMissile() {
-        missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+        this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+    }
+
+    @Override
+    public void evoluer(Commande commandeUser) {
+        if (commandeUser.gauche) {
+            this.deplacerVaisseauVersLaGauche();
+        }
+        if (commandeUser.droite) {
+            this.deplacerVaisseauVersLaDroite();
+        }
+        if (commandeUser.tir && !this.aUnMissile()) {
+            this.tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR),Constante.MISSILE_VITESSE);
+        }
+        if (this.aUnMissile()) {
+            this.deplacerMissile();
+        }
+    }
+
+    @Override
+    public boolean etreFini() {
+        return false;
+    }
+
+    public Vaisseau recupererVaisseau() {
+        return this.vaisseau;
+    }
+
+    public Missile recupererMissile() {
+        return this.missile;
     }
 }

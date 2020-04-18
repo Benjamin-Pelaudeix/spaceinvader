@@ -7,6 +7,7 @@ title __IUT's Class Diagram__\n
         {static} + ESPACEJEU_HAUTEUR : int
         {static} + ESPACEJEU_LONGUEUR : int
         {static} + MARQUE_FIN_LIGNE : char
+        {static} + MARQUE_MISSILE : char
         {static} + MARQUE_VAISSEAU : char
         {static} + MARQUE_VIDE : char
         {static} + VAISSEAU_HAUTEUR : int
@@ -23,6 +24,26 @@ title __IUT's Class Diagram__\n
         + Dimension()
         + hauteur()
         + longueur()
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    enum Direction {
+      BAS
+      BAS_ECRAN
+      DROITE
+      GAUCHE
+      HAUT
+      HAUT_ECRAN
+      valeur
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Missile {
+        + Missile()
     }
   }
   
@@ -51,6 +72,7 @@ title __IUT's Class Diagram__\n
         + SpaceInvaders()
         + aUnVaisseau()
         + aUnVaisseauQuiOccupeLaPosition()
+        + deplacerMissile()
         + deplacerVaisseauVersLaDroite()
         + deplacerVaisseauVersLaGauche()
         + estDansEspaceJeu()
@@ -58,7 +80,10 @@ title __IUT's Class Diagram__\n
         + positionnerUnNouveauVaisseau()
         + recupererEspaceJeuDansChaineASCII()
         + recupererMarqueDeLaPosition()
+        + tirerUnMissile()
         + toString()
+        - aUnMissile()
+        - aUnMissileQuiOccupeLaPosition()
     }
   }
   
@@ -69,10 +94,11 @@ title __IUT's Class Diagram__\n
         + Sprite()
         + abscisseLaPlusADroite()
         + abscisseLaPlusAGauche()
-        + deplacerVersLaDroite()
-        + deplacerVersLaGauche()
+        + deplacerHorizontalementVers()
+        + deplacerVerticalementVers()
         + estAbscisseCouverte()
         + estOrdonneeCouverte()
+        + hauteur()
         + longueur()
         + occupeLaPosition()
         + ordonneeLaPlusBasse()
@@ -85,10 +111,14 @@ title __IUT's Class Diagram__\n
   namespace fr.unilim.iut {
     class fr.unilim.iut.Vaisseau {
         + Vaisseau()
+        + tirerUnMissile()
+        - calculerPositionDeTirDuMissile()
     }
   }
   
 
+  fr.unilim.iut.Missile -up-|> fr.unilim.iut.Sprite
+  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Missile : missile
   fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
   fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
   fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine

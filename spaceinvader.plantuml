@@ -15,6 +15,18 @@ title __SPACEINVADER's Class Diagram__\n
   
 
   namespace fr.unilim.iut {
+    enum Direction {
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    class fr.unilim.iut.Missile {
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
     class fr.unilim.iut.Position {
     }
   }
@@ -54,6 +66,16 @@ title __SPACEINVADER's Class Diagram__\n
   }
   
 
+  namespace fr.unilim.iut {
+    namespace utils {
+      class fr.unilim.iut.utils.MissileException {
+      }
+    }
+  }
+  
+
+  fr.unilim.iut.Missile -up-|> fr.unilim.iut.Sprite
+  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Missile : missile
   fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
   fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
   fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine
