@@ -6,10 +6,11 @@ Implémentation du projet space invaders en TDD à partir de https://github.com/
 
 ### Sommaire 
 
-- [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-27)
-- [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvaders#semaine-28)
-- Semaine 29
--  [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvaders#glossaire)
+- [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-27)
+- [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
+- [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
+- [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
+- [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Semaine 27
 
@@ -27,7 +28,7 @@ _Modélisation UML :_
 
 _Nuage de mots :_
 
-![Nuage de mot S27](/img/wordCloudS27.jpg)
+Non disponible en raison de la reprise du projet.
 
 _Difficultés et remarques :_
 
@@ -52,7 +53,7 @@ _Modélisation UML :_
 
 _Nuage de mots :_
 
-![Nuage de mots S28](/img/wordCloudS28.png)
+Non disponible en raison de la reprise du projet.
 
 _Difficultés et remarques :_
 
@@ -67,6 +68,24 @@ _Fonctionnalités implémentées :_
    
 _Modélisation UML :_
 
+![Diagramme classe S29](/img/spaceinvadersS29.png)
+
+_Nuage de mots :_
+
+![Mots S29](/img/motsS29.PNG)
+
+_Difficultés rencontrées :_
+
+J'ai eu un problème qui m'a été remonté concernant mon .gitignore. En essayant de le corriger, mon projet a été corrompu. J'ai dû créer un nouveau dépôt GitHub pour héberger mon projet.
+
+### Vacances
+
+_Fonctionnalités implémentées :_
+
+
+
+_Modélisation UML :_
+
 
 
 _Nuage de mots :_
@@ -75,7 +94,8 @@ _Nuage de mots :_
 
 _Difficultés rencontrées :_
 
-J'ai eu un problème qui m'a été remonté concernant mon .gitignore. En essayant de le corriger, mon projet a été corrompu. J'ai dû créer un nouveau dépôt GitHub pour héberger mon projet.
+
+
 
 ### Glossaire
 
