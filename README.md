@@ -27,7 +27,7 @@ _Modélisation UML :_
 
 _Nuage de mots :_
 
-![Nuage de mot S27](/img/wordCloudS27.jpg)
+Non disponible en raison de la reprise du projet.
 
 _Difficultés et remarques :_
 
@@ -52,7 +52,7 @@ _Modélisation UML :_
 
 _Nuage de mots :_
 
-![Nuage de mots S28](/img/wordCloudS28.png)
+Non disponible en raison de la reprise du projet.
 
 _Difficultés et remarques :_
 
@@ -67,11 +67,11 @@ _Fonctionnalités implémentées :_
    
 _Modélisation UML :_
 
-
+![Diagramme classe S29](/img/spaceinvadersS29.png)
 
 _Nuage de mots :_
 
-
+![Mots S29](/img/motsS29.PNG)
 
 _Difficultés rencontrées :_
 
