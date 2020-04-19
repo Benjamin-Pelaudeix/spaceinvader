@@ -171,6 +171,7 @@ title __SPACEINVADER's Class Diagram__\n
   fr.unilim.iut.model.DessinSpaceInvaders .up.|> fr.unilim.iut.moteurjeu.DessinJeu
   fr.unilim.iut.model.DessinSpaceInvaders o-- fr.unilim.iut.model.SpaceInvaders : jeu
   fr.unilim.iut.model.Envahisseur -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.Envahisseur o-- fr.unilim.iut.model.Direction : direction
   fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
   fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur

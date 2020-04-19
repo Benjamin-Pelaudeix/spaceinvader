@@ -5,6 +5,9 @@ title __MODEL's Class Diagram__\n
   namespace fr.unilim.iut {
     namespace model {
       class fr.unilim.iut.model.Constante {
+          {static} + ENVAHISSEUR_HAUTEUR : int
+          {static} + ENVAHISSEUR_LONGUEUR : int
+          {static} + ENVAHISSEUR_VITESSE : int
           {static} + ESPACEJEU_HAUTEUR : int
           {static} + ESPACEJEU_LONGUEUR : int
           {static} + MARQUE_ENVAHISSEUR : char
@@ -28,6 +31,7 @@ title __MODEL's Class Diagram__\n
       class fr.unilim.iut.model.DessinSpaceInvaders {
           + DessinSpaceInvaders()
           + dessiner()
+          - dessinerEnvahisseur()
           - dessinerUnMissile()
           - dessinerUnVaisseau()
       }
@@ -67,6 +71,8 @@ title __MODEL's Class Diagram__\n
     namespace model {
       class fr.unilim.iut.model.Envahisseur {
           + Envahisseur()
+          + getDirection()
+          + setDirection()
       }
     }
   }
@@ -108,9 +114,9 @@ title __MODEL's Class Diagram__\n
           + aUnMissile()
           + aUnVaisseau()
           + aUnVaisseauQuiOccupeLaPosition()
-          + deplacerEnvahisseur()
           + deplacerEnvahisseurVersLaDroite()
           + deplacerEnvahisseurVersLaGauche()
+          + deplacerEvahisseur()
           + deplacerMissile()
           + deplacerVaisseauVersLaDroite()
           + deplacerVaisseauVersLaGauche()
@@ -169,6 +175,7 @@ title __MODEL's Class Diagram__\n
   fr.unilim.iut.model.DessinSpaceInvaders .up.|> fr.unilim.iut.moteurjeu.DessinJeu
   fr.unilim.iut.model.DessinSpaceInvaders o-- fr.unilim.iut.model.SpaceInvaders : jeu
   fr.unilim.iut.model.Envahisseur -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.Envahisseur o-- fr.unilim.iut.model.Direction : direction
   fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
   fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
