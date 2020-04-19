@@ -3,49 +3,143 @@
 title __SPACEINVADER's Class Diagram__\n
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Constante {
+    class fr.unilim.iut.Main {
     }
   }
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Dimension {
+    namespace model {
+      class fr.unilim.iut.model.Constante {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    enum Direction {
+    namespace model {
+      class fr.unilim.iut.model.DessinSpaceInvaders {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Missile {
+    namespace model {
+      class fr.unilim.iut.model.Dimension {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Position {
+    namespace model {
+      enum Direction {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.SpaceInvaders {
+    namespace model {
+      class fr.unilim.iut.model.Envahisseur {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    abstract class fr.unilim.iut.Sprite {
+    namespace model {
+      class fr.unilim.iut.model.Missile {
+      }
     }
   }
   
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Vaisseau {
+    namespace model {
+      class fr.unilim.iut.model.Position {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.SpaceInvaders {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace model {
+      abstract class fr.unilim.iut.model.Sprite {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Vaisseau {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      class fr.unilim.iut.moteurjeu.Commande {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      class fr.unilim.iut.moteurjeu.Controleur {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      interface fr.unilim.iut.moteurjeu.DessinJeu {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      class fr.unilim.iut.moteurjeu.InterfaceGraphique {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      interface fr.unilim.iut.moteurjeu.Jeu {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      class fr.unilim.iut.moteurjeu.MoteurGraphique {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace moteurjeu {
+      class fr.unilim.iut.moteurjeu.PanelDessin {
+      }
     }
   }
   
@@ -74,12 +168,27 @@ title __SPACEINVADER's Class Diagram__\n
   }
   
 
-  fr.unilim.iut.Missile -up-|> fr.unilim.iut.Sprite
-  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Missile : missile
-  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
-  fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
-  fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine
-  fr.unilim.iut.Vaisseau -up-|> fr.unilim.iut.Sprite
+  fr.unilim.iut.model.DessinSpaceInvaders .up.|> fr.unilim.iut.moteurjeu.DessinJeu
+  fr.unilim.iut.model.DessinSpaceInvaders o-- fr.unilim.iut.model.SpaceInvaders : jeu
+  fr.unilim.iut.model.Envahisseur -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Missile : missile
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Vaisseau : vaisseau
+  fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Dimension : dimension
+  fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Position : origine
+  fr.unilim.iut.model.Vaisseau -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.moteurjeu.Controleur .up.|> java.awt.event.KeyListener
+  fr.unilim.iut.moteurjeu.Controleur o-- fr.unilim.iut.moteurjeu.Commande : commandeARetourner
+  fr.unilim.iut.moteurjeu.Controleur o-- fr.unilim.iut.moteurjeu.Commande : commandeEnCours
+  fr.unilim.iut.moteurjeu.InterfaceGraphique o-- fr.unilim.iut.moteurjeu.Controleur : controleur
+  fr.unilim.iut.moteurjeu.InterfaceGraphique o-- fr.unilim.iut.moteurjeu.PanelDessin : panel
+  fr.unilim.iut.moteurjeu.MoteurGraphique o-- fr.unilim.iut.moteurjeu.DessinJeu : dessin
+  fr.unilim.iut.moteurjeu.MoteurGraphique o-- fr.unilim.iut.moteurjeu.InterfaceGraphique : gui
+  fr.unilim.iut.moteurjeu.MoteurGraphique o-- fr.unilim.iut.moteurjeu.Jeu : jeu
+  fr.unilim.iut.moteurjeu.PanelDessin -up-|> javax.swing.JPanel
+  fr.unilim.iut.moteurjeu.PanelDessin o-- fr.unilim.iut.moteurjeu.DessinJeu : dessin
 
 
 right footer

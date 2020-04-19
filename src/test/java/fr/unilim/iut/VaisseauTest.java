@@ -1,5 +1,8 @@
 package fr.unilim.iut;
 
+import fr.unilim.iut.model.Dimension;
+import fr.unilim.iut.model.Position;
+import fr.unilim.iut.model.Vaisseau;
 import fr.unilim.iut.utils.MissileException;
 import org.junit.Test;
 

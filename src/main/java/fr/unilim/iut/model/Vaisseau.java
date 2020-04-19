@@ -1,7 +1,6 @@
-package fr.unilim.iut;
+package fr.unilim.iut.model;
 
 import fr.unilim.iut.utils.MissileException;
-import javafx.geometry.Pos;
 
 public class Vaisseau extends Sprite {
 

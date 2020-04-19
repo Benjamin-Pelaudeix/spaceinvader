@@ -1,7 +1,8 @@
 package fr.unilim.iut;
 
-import fr.unilim.iut.moteurjeu.DessinJeu;
-import fr.unilim.iut.moteurjeu.Jeu;
+import fr.unilim.iut.model.Constante;
+import fr.unilim.iut.model.DessinSpaceInvaders;
+import fr.unilim.iut.model.SpaceInvaders;
 import fr.unilim.iut.moteurjeu.MoteurGraphique;
 
 public class Main {

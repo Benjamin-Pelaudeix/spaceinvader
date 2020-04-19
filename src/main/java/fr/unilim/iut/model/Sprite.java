@@ -1,10 +1,4 @@
-package fr.unilim.iut;
-
-import sun.java2d.windows.GDIRenderer;
-
-import java.security.DigestException;
-
-import static fr.unilim.iut.Direction.HAUT;
+package fr.unilim.iut.model;
 
 public abstract class Sprite {
     protected int vitesse;

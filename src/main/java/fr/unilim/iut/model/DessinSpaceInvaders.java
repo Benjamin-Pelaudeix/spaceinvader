@@ -1,4 +1,4 @@
-package fr.unilim.iut;
+package fr.unilim.iut.model;
 
 import fr.unilim.iut.moteurjeu.DessinJeu;
 
@@ -23,6 +23,10 @@ public class DessinSpaceInvaders implements DessinJeu {
                 Missile missile = this.jeu.recupererMissile();
                 this.dessinerUnMissile(missile, image);
             }
+            if (jeu.aUnEnvahisseur()) {
+                Envahisseur envahisseur = this.jeu.recupererEnvahisseur();
+                this.dessinerEnvahisseur(envahisseur,image);
+            }
         }
     }
 
@@ -39,6 +43,13 @@ public class DessinSpaceInvaders implements DessinJeu {
         crayon.setColor(Color.blue);
         crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneeLaPlusBasse(), missile.longueur(), missile.hauteur());
 
+    }
+
+    private void dessinerEnvahisseur(Envahisseur envahisseur, BufferedImage img) {
+        Graphics2D crayon = (Graphics2D) img.getGraphics();
+
+        crayon.setColor(Color.green);
+        crayon.fillRect(envahisseur.abscisseLaPlusAGauche(), envahisseur.ordonneeLaPlusBasse(), envahisseur.longueur(), envahisseur.hauteur());
     }
 }
 

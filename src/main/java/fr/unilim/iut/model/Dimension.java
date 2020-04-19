@@ -1,4 +1,4 @@
-package fr.unilim.iut;
+package fr.unilim.iut.model;
 
 public class Dimension {
 

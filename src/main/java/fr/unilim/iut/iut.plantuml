@@ -3,126 +3,12 @@
 title __IUT's Class Diagram__\n
 
   namespace fr.unilim.iut {
-    class fr.unilim.iut.Constante {
-        {static} + ESPACEJEU_HAUTEUR : int
-        {static} + ESPACEJEU_LONGUEUR : int
-        {static} + MARQUE_FIN_LIGNE : char
-        {static} + MARQUE_MISSILE : char
-        {static} + MARQUE_VAISSEAU : char
-        {static} + MARQUE_VIDE : char
-        {static} + VAISSEAU_HAUTEUR : int
-        {static} + VAISSEAU_LONGUEUR : int
-        {static} + VAISSEAU_VITESSE : int
+    class fr.unilim.iut.Main {
+        {static} + main()
     }
   }
   
 
-  namespace fr.unilim.iut {
-    class fr.unilim.iut.Dimension {
-        ~ hauteur : int
-        ~ longueur : int
-        + Dimension()
-        + hauteur()
-        + longueur()
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    enum Direction {
-      BAS
-      BAS_ECRAN
-      DROITE
-      GAUCHE
-      HAUT
-      HAUT_ECRAN
-      valeur
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    class fr.unilim.iut.Missile {
-        + Missile()
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    class fr.unilim.iut.Position {
-        ~ x : int
-        ~ y : int
-        + Position()
-        + abscisse()
-        + changerAbscisse()
-        + changerOrdonnee()
-        + ordonnee()
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    class fr.unilim.iut.SpaceInvaders {
-        {static} + MARQUE_FIN_LIGNE : char
-        {static} + MARQUE_VAISSEAU : char
-        {static} + MARQUE_VIDE : char
-        {static} + PREMIERE_MARQUE_PAR_LIGNE : int
-        ~ hauteur : int
-        ~ longueur : int
-        + SpaceInvaders()
-        + aUnVaisseau()
-        + aUnVaisseauQuiOccupeLaPosition()
-        + deplacerMissile()
-        + deplacerVaisseauVersLaDroite()
-        + deplacerVaisseauVersLaGauche()
-        + estDansEspaceJeu()
-        + initialiserJeu()
-        + positionnerUnNouveauVaisseau()
-        + recupererEspaceJeuDansChaineASCII()
-        + recupererMarqueDeLaPosition()
-        + tirerUnMissile()
-        + toString()
-        - aUnMissile()
-        - aUnMissileQuiOccupeLaPosition()
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    abstract class fr.unilim.iut.Sprite {
-        # vitesse : int
-        + Sprite()
-        + abscisseLaPlusADroite()
-        + abscisseLaPlusAGauche()
-        + deplacerHorizontalementVers()
-        + deplacerVerticalementVers()
-        + estAbscisseCouverte()
-        + estOrdonneeCouverte()
-        + hauteur()
-        + longueur()
-        + occupeLaPosition()
-        + ordonneeLaPlusBasse()
-        + ordonneeLaPlusHaute()
-        + positionner()
-    }
-  }
-  
-
-  namespace fr.unilim.iut {
-    class fr.unilim.iut.Vaisseau {
-        + Vaisseau()
-        + tirerUnMissile()
-        - calculerPositionDeTirDuMissile()
-    }
-  }
-  
-
-  fr.unilim.iut.Missile -up-|> fr.unilim.iut.Sprite
-  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Missile : missile
-  fr.unilim.iut.SpaceInvaders o-- fr.unilim.iut.Vaisseau : vaisseau
-  fr.unilim.iut.Sprite o-- fr.unilim.iut.Dimension : dimension
-  fr.unilim.iut.Sprite o-- fr.unilim.iut.Position : origine
-  fr.unilim.iut.Vaisseau -up-|> fr.unilim.iut.Sprite
 
 
 right footer
