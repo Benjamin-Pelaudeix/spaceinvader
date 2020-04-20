@@ -5,14 +5,14 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 
 ### Sommaire 
 
-- [Objectifs et Fonctionnalités](https://github.com/Benjamin-Pelaudeix/spaceinvader#objectifs-&-fonctionnalités)
+- [Objectifs et Fonctionnalités](https://github.com/Benjamin-Pelaudeix/spaceinvader#objectifs--fonctionnalités)
 - [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-27)
 - [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
-### Objetcifs & Fonctionnalités
+### Objectifs & Fonctionnalités
 
 * Objectif n°1 :white_check_mark:
    - [Fonctionnalité n°1](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S1_DeplacerVaisseau.md) :white_check_mark:
