@@ -10,6 +10,14 @@ title __SPACEINVADER's Class Diagram__\n
 
   namespace fr.unilim.iut {
     namespace model {
+      class fr.unilim.iut.model.Collision {
+      }
+    }
+  }
+  
+
+  namespace fr.unilim.iut {
+    namespace model {
       class fr.unilim.iut.model.Constante {
       }
     }
@@ -174,6 +182,7 @@ title __SPACEINVADER's Class Diagram__\n
   fr.unilim.iut.model.Envahisseur o-- fr.unilim.iut.model.Direction : direction
   fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
   fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Collision : collision
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Missile : missile
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Vaisseau : vaisseau

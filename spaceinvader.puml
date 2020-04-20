@@ -1,26 +1,201 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+@startuml
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+title __MODEL's Class Diagram__\n
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Constante {
+          {static} + ENVAHISSEUR_HAUTEUR : int
+          {static} + ENVAHISSEUR_LONGUEUR : int
+          {static} + ENVAHISSEUR_VITESSE : int
+          {static} + ESPACEJEU_HAUTEUR : int
+          {static} + ESPACEJEU_LONGUEUR : int
+          {static} + MARQUE_ENVAHISSEUR : char
+          {static} + MARQUE_FIN_LIGNE : char
+          {static} + MARQUE_MISSILE : char
+          {static} + MARQUE_VAISSEAU : char
+          {static} + MARQUE_VIDE : char
+          {static} + MISSILE_HAUTEUR : int
+          {static} + MISSILE_LONGUEUR : int
+          {static} + MISSILE_VITESSE : int
+          {static} + VAISSEAU_HAUTEUR : int
+          {static} + VAISSEAU_LONGUEUR : int
+          {static} + VAISSEAU_VITESSE : int
+      }
+    }
+  }
 
-class ArrayList {
-Object[] elementData
-size()
-}
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.DessinSpaceInvaders {
+          + DessinSpaceInvaders()
+          + dessiner()
+          - dessinerEnvahisseur()
+          - dessinerUnMissile()
+          - dessinerUnVaisseau()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Dimension {
+          ~ hauteur : int
+          ~ longueur : int
+          + Dimension()
+          + hauteur()
+          + longueur()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      enum Direction {
+        BAS
+        BAS_ECRAN
+        DROITE
+        GAUCHE
+        HAUT
+        HAUT_ECRAN
+        valeur
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Envahisseur {
+          + Envahisseur()
+          + getDirection()
+          + setDirection()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Missile {
+          + Missile()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Position {
+          ~ x : int
+          ~ y : int
+          + Position()
+          + abscisse()
+          + changerAbscisse()
+          + changerOrdonnee()
+          + ordonnee()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.SpaceInvaders {
+          {static} + PREMIERE_MARQUE_PAR_LIGNE : int
+          ~ hauteur : int
+          ~ longueur : int
+          + SpaceInvaders()
+          + aUnEnvahisseur()
+          + aUnEnvahisseurQuiOccupeLaPosition()
+          + aUnMissile()
+          + aUnVaisseau()
+          + aUnVaisseauQuiOccupeLaPosition()
+          + deplacerEnvahisseurVersLaDroite()
+          + deplacerEnvahisseurVersLaGauche()
+          + deplacerEvahisseur()
+          + deplacerMissile()
+          + deplacerVaisseauVersLaDroite()
+          + deplacerVaisseauVersLaGauche()
+          + estDansEspaceJeu()
+          + etreFini()
+          + evoluer()
+          + initialiserJeu()
+          + positionnerUnNouveauEnvahisseur()
+          + positionnerUnNouveauVaisseau()
+          + recupererEnvahisseur()
+          + recupererEspaceJeuDansChaineASCII()
+          + recupererMarqueDeLaPosition()
+          + recupererMissile()
+          + recupererVaisseau()
+          + tirerUnMissile()
+          + toString()
+          - aUnMissileQuiOccupeLaPosition()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      abstract class fr.unilim.iut.model.Sprite {
+          # vitesse : int
+          + Sprite()
+          + abscisseLaPlusADroite()
+          + abscisseLaPlusAGauche()
+          + deplacerHorizontalementVers()
+          + deplacerVerticalementVers()
+          + estAbscisseCouverte()
+          + estOrdonneeCouverte()
+          + hauteur()
+          + longueur()
+          + occupeLaPosition()
+          + ordonneeLaPlusBasse()
+          + ordonneeLaPlusHaute()
+          + positionner()
+      }
+    }
+  }
+
+
+  namespace fr.unilim.iut {
+    namespace model {
+      class fr.unilim.iut.model.Vaisseau {
+          + Vaisseau()
+          + tirerUnMissile()
+          - calculerPositionDeTirDuMissile()
+      }
+    }
+  }
+
+
+  fr.unilim.iut.model.DessinSpaceInvaders .up.|> fr.unilim.iut.moteurjeu.DessinJeu
+  fr.unilim.iut.model.DessinSpaceInvaders o-- fr.unilim.iut.model.SpaceInvaders : jeu
+  fr.unilim.iut.model.Envahisseur -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.Envahisseur o-- fr.unilim.iut.model.Direction : direction
+  fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
+  fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Missile : missile
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Vaisseau : vaisseau
+  fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Dimension : dimension
+  fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Position : origine
+  fr.unilim.iut.model.Vaisseau -up-|> fr.unilim.iut.model.Sprite
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
+
 
 @enduml

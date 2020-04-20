@@ -18,6 +18,8 @@ public class SpaceInvaders implements Jeu {
     Vaisseau vaisseau;
     Missile missile;
     Envahisseur envahisseur;
+    Collision collision = new Collision();
+    boolean finDePartie;
 
     public SpaceInvaders(int longueur, int hauteur) {
         this.longueur = longueur;
@@ -152,7 +154,6 @@ public class SpaceInvaders implements Jeu {
         if (!estDansEspaceJeu(x,y-hauteurEnvahisseur+1)) {
             throw new DebordementEspaceJeuException("L'envahisseur déborde de l'espace jeu vers le bas à cause de sa longueur");
         }
-
         envahisseur = new Envahisseur(dimension, position, vitesse);
     }
 
@@ -190,11 +191,9 @@ public class SpaceInvaders implements Jeu {
     public void deplacerEvahisseur() {
         if (envahisseur.abscisseLaPlusADroite() >= longueur-1) {
             envahisseur.setDirection(Direction.GAUCHE);
-            System.out.println("1");
         }
         if (0 >= envahisseur.abscisseLaPlusAGauche()) {
             envahisseur.setDirection(Direction.DROITE);
-            System.out.println("2");
 
         }
         envahisseur.deplacerHorizontalementVers(envahisseur.getDirection());
@@ -204,6 +203,7 @@ public class SpaceInvaders implements Jeu {
     //JEU
 
     public void initialiserJeu() {
+        this.finDePartie = false;
         Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
         Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
         positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
@@ -213,8 +213,16 @@ public class SpaceInvaders implements Jeu {
         return (x>=0) && (x<longueur) && ((y>=0) && (y<hauteur));
     }
 
+    public void detecterCollisionMissileEnvahisseur() {
+        if (this.aUnEnvahisseur() && this.aUnMissile() && collision.detecterCollision(envahisseur,missile)) {
+            envahisseur = null;
+            this.finDePartie = true;
+        }
+    }
+
     @Override
     public void evoluer(Commande commandeUser) {
+        //COMMANDES
         if (commandeUser.gauche) {
             this.deplacerVaisseauVersLaGauche();
         }
@@ -224,6 +232,9 @@ public class SpaceInvaders implements Jeu {
         if (commandeUser.tir && !this.aUnMissile()) {
             this.tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR),Constante.MISSILE_VITESSE);
         }
+        //DETECTIONS
+        detecterCollisionMissileEnvahisseur();
+        //DEPLACEMENTS AUTOMATIQUES
         if (this.aUnMissile()) {
             this.deplacerMissile();
         }
@@ -233,11 +244,12 @@ public class SpaceInvaders implements Jeu {
         if (aUnEnvahisseur()) {
             this.deplacerEvahisseur();
         }
+
     }
 
     @Override
     public boolean etreFini() {
-        return false;
+        return this.finDePartie;
     }
 
 

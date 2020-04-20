@@ -3,7 +3,18 @@
 title __MODEL's Class Diagram__\n
 
   namespace fr.unilim.iut {
-    namespace model {
+      class fr.unilim.iut.model.Collision {
+          + detecterCollision()
+          - collisionSprites()
+          - collisionSpritesAGaucheOuADroite()
+          - collisionSpritesEnBas()
+          - collisionSpritesEnHaut()
+      }
+
+  }
+  
+
+  namespace fr.unilim.iut {
       class fr.unilim.iut.model.Constante {
           {static} + ENVAHISSEUR_HAUTEUR : int
           {static} + ENVAHISSEUR_LONGUEUR : int
@@ -22,12 +33,11 @@ title __MODEL's Class Diagram__\n
           {static} + VAISSEAU_LONGUEUR : int
           {static} + VAISSEAU_VITESSE : int
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.DessinSpaceInvaders {
           + DessinSpaceInvaders()
           + dessiner()
@@ -35,12 +45,11 @@ title __MODEL's Class Diagram__\n
           - dessinerUnMissile()
           - dessinerUnVaisseau()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.Dimension {
           ~ hauteur : int
           ~ longueur : int
@@ -48,12 +57,11 @@ title __MODEL's Class Diagram__\n
           + hauteur()
           + longueur()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       enum Direction {
         BAS
         BAS_ECRAN
@@ -63,32 +71,29 @@ title __MODEL's Class Diagram__\n
         HAUT_ECRAN
         valeur
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.Envahisseur {
           + Envahisseur()
           + getDirection()
           + setDirection()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.Missile {
           + Missile()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.Position {
           ~ x : int
           ~ y : int
@@ -98,14 +103,14 @@ title __MODEL's Class Diagram__\n
           + changerOrdonnee()
           + ordonnee()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.SpaceInvaders {
           {static} + PREMIERE_MARQUE_PAR_LIGNE : int
+          ~ finDePartie : boolean
           ~ hauteur : int
           ~ longueur : int
           + SpaceInvaders()
@@ -120,6 +125,7 @@ title __MODEL's Class Diagram__\n
           + deplacerMissile()
           + deplacerVaisseauVersLaDroite()
           + deplacerVaisseauVersLaGauche()
+          + detecterCollisionMissileEnvahisseur()
           + estDansEspaceJeu()
           + etreFini()
           + evoluer()
@@ -135,12 +141,11 @@ title __MODEL's Class Diagram__\n
           + toString()
           - aUnMissileQuiOccupeLaPosition()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       abstract class fr.unilim.iut.model.Sprite {
           # vitesse : int
           + Sprite()
@@ -157,18 +162,17 @@ title __MODEL's Class Diagram__\n
           + ordonneeLaPlusHaute()
           + positionner()
       }
-    }
+
   }
   
 
   namespace fr.unilim.iut {
-    namespace model {
       class fr.unilim.iut.model.Vaisseau {
           + Vaisseau()
           + tirerUnMissile()
           - calculerPositionDeTirDuMissile()
       }
-    }
+
   }
   
 
@@ -178,6 +182,7 @@ title __MODEL's Class Diagram__\n
   fr.unilim.iut.model.Envahisseur o-- fr.unilim.iut.model.Direction : direction
   fr.unilim.iut.model.Missile -up-|> fr.unilim.iut.model.Sprite
   fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
+  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Collision : collision
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Missile : missile
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Vaisseau : vaisseau

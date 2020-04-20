@@ -1,16 +1,13 @@
 package fr.unilim.iut;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import fr.unilim.iut.model.Dimension;
-import fr.unilim.iut.model.Position;
-import fr.unilim.iut.model.SpaceInvaders;
+import fr.unilim.iut.model.*;
 import fr.unilim.iut.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.utils.HorsEspaceJeuException;
 import fr.unilim.iut.utils.MissileException;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class SpaceInvadersTest {
 
@@ -463,5 +460,18 @@ public class SpaceInvadersTest {
         } catch (final DebordementEspaceJeuException e) {
 
         }
+    }
+
+    @Test
+    public void test_MissileToucheSprite_DoitDeclencherFinDuJeu() {
+        spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7,2), new Position(5,9), 1);
+        spaceinvaders.positionnerUnNouveauEnvahisseur(new Dimension(4,3), new Position(5,4), 1);
+        spaceinvaders.tirerUnMissile(new Dimension(5,3), 2);
+        spaceinvaders.deplacerMissile();
+        spaceinvaders.deplacerMissile();
+
+        spaceinvaders.detecterCollisionMissileEnvahisseur();
+
+        assertTrue(spaceinvaders.etreFini());
     }
 }
