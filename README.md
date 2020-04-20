@@ -192,3 +192,7 @@ Définition des **collisions** récupérée sur ce site :arrow_right: [Lien vers
 IDE utilisé pour ce projet :arrow_right: [IntelliJ](https://www.jetbrains.com/fr-fr/idea/download/#section=windows).
 
 JDK utilisé pour ce projet :arrow_right: [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
+
+Générateur de diagramme UML utilisé :arrow_right: [Plant UML pour IntelliJ](https://plugins.jetbrains.com/plugin/7017-plantuml-integration).
+
+Générateur de nuage de mots utilisé :arrow_right: [Source Code Word Cloud Generator](https://github.com/iblasquez/enseignement-iut-m2104-conception/blob/master/ressources/Word%20Cloud%20Generator.zip)
