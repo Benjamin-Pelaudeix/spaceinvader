@@ -5,11 +5,31 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 
 ### Sommaire 
 
+- [Objectifs et Fonctionnalités](https://github.com/Benjamin-Pelaudeix/spaceinvader#objectifs-&-fonctionnalités)
 - [Semaine 27](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-27)
 - [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
+
+### Objetcifs & Fonctionnalités
+
+* Objectif n°1 :white_check_mark:
+   - [Fonctionnalité n°1](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S1_DeplacerVaisseau.md) :white_check_mark:
+   - [Fonctionnalité n°2](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S2_DimensionnerVaisseau.md) :white_check_mark:
+   - [Fonctionnalité n°3](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S3_ChoisirVitesseVaisseau.md) :white_check_mark:
+   - [Fonctionnalité n°4](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S4_TirerMissileDepuisVaisseau.md) :white_check_mark:
+   - [Fonctionnalité n°5](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S5_Envahisseur.md) :white_check_mark:
+   - [Fonctionnalité n°6](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S6_DetecterCollision.md) :white_check_mark:
+   - [Fonctionnalité n°7](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S7_TerminerPartie.md) :white_check_mark:
+* Objectif n°2 :x:
+   - [Fonctionnalité n°8](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S8_TirerPlusieursMissiles.md) :x:
+   - [Fonctionnalité n°9](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S9_EnvoyerLigneEnvahisseurs.md) :x:
+   - [Fonctionnalité n°10](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S10_GererScore.md) :x:
+   - [Fonctionnalité n°11](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S11_TirerMissileDepuisEnvahisseur.md) :x:
+   - [Fonctionnalité n°12](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S12_EnvoyerHordeEnvahisseurs.md) :x:
+* Objectif n°3
+   - [Fonctionnalité n°13](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S13_SpaceInvadersDeReve.md) :x:
 
 ### Semaine 27
 
