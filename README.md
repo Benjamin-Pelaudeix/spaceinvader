@@ -96,8 +96,35 @@ _Modélisation UML :_
 
 _Nuage de mots :_
 
+Après Fonctionnalité n°4
 ![Nuage de mots](/img/motsVacF4.PNG)
+Après Spike
 ![Nuage de mots avec moteur graphique](/img/motsVacs.PNG)
+
+_Difficultés rencontrées :_
+
+Aucune
+
+#### 19/04/2020
+
+_Fonctionnalités implémentées :_
+
+* Fonctionnalité n°5 :
+   **Critères d'acceptances** : Ajouter un envahisseur au jeu.
+   
+* Fonctionnalité n°6 :
+   **Critères d'accptances** : Détecter les collisions entre deux sprites.
+   
+_Modélisation UML :_
+
+![diagramme](/img/spaceinvaderVacF6.png)
+
+_Nuage de mots :_
+
+Fonctionnalité n°5
+![nuage mot F5](/img/motsVacF5.PNG)
+Fonctionnalité n°6
+![nuage mot F6](/img/motsVacF6.PNG)
 
 _Difficultés rencontrées :_
 
@@ -114,3 +141,8 @@ Aucune
 ``Vitesse`` est, pour ce projet, une vitesse instantanée définie comme un vecteur optenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
 
 ``Sprite`` est, dans les jeux vidéos, un élément graphique qui peut se déplacer sur l'écran.
+
+``Collisions`` sont un aspect fondamental de tout jeu d'action ou d'animation qui prendront en paramètre 2 objets. Ces fonctions renverront simplement un booléen.
+
+### Références
+Définition des **collisions** récupérée sur ce site : [jeux.developpez.com](https://jeux.developpez.com/tutoriels/theorie-des-collisions/)
