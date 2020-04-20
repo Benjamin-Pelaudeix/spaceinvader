@@ -1,6 +1,5 @@
-# Space Invaders
-TPs Space Invaders - M2104
-Implémentation du projet space invaders en TDD à partir de https://github.com/iblasquez/tdd_spaceInvaders.
+# :alien: Space Invaders
+Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conception M2104 de première année de DUT Informatique :computer:.
 
 ## Carnet de bord hebdomadaire
 
@@ -152,20 +151,24 @@ Aucune
 
 ### Glossaire
 
-``Vaisseau`` est un véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
+:airplane: ``Vaisseau`` est un véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
 
-``Envahisseur`` est un ennemi qui apparaît à l'écran, se déplace automatiquement et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
+:alien: ``Envahisseur`` est un ennemi qui apparaît à l'écran, se déplace automatiquement et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
 
-``Missile`` est un projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
+:rocket: ``Missile`` est un projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
-``Vitesse`` est, pour ce projet, une vitesse instantanée définie comme un vecteur optenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
+:dash: ``Vitesse`` est, pour ce projet, une vitesse instantanée définie comme un vecteur optenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
 
-``Sprite`` est, dans les jeux vidéos, un élément graphique qui peut se déplacer sur l'écran.
+:runner: ``Sprite`` est, dans les jeux vidéos, un élément graphique qui peut se déplacer sur l'écran.
 
-``Collisions`` sont un aspect fondamental de tout jeu d'action ou d'animation qui prendront en paramètre 2 objets. Ces fonctions renverront simplement un booléen.
+:boom: ``Collisions`` sont un aspect fondamental de tout jeu d'action ou d'animation qui prendront en paramètre 2 objets. Ces fonctions renverront simplement un booléen.
 
 ### Références
 
-Sujet SpaceInvaders créé par @iblasquez pour le compte du module M2104 de DUT Informatique : [sujet](https://github.com/iblasquez/tdd_spaceInvaders.git)
+Sujet SpaceInvaders créé par @iblasquez pour le compte du module M2104 de DUT Informatique :arrow_right: [Sujet](https://github.com/iblasquez/tdd_spaceInvaders.git).
 
-Définition des **collisions** récupérée sur ce site : [jeux.developpez.com](https://jeux.developpez.com/tutoriels/theorie-des-collisions/)
+Définition des **collisions** récupérée sur ce site :arrow_right: [Lien vers jeux.developpez.com](https://jeux.developpez.com/tutoriels/theorie-des-collisions/).
+
+IDE utilisé pour ce projet :arrow_right: [IntelliJ](https://www.jetbrains.com/fr-fr/idea/download/#section=windows).
+
+JDK utilisé pour ce projet :arrow_right: [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
