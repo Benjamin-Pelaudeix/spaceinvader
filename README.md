@@ -28,7 +28,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
    - [Fonctionnalité n°10](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S10_GererScore.md) :x:
    - [Fonctionnalité n°11](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S11_TirerMissileDepuisEnvahisseur.md) :x:
    - [Fonctionnalité n°12](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S12_EnvoyerHordeEnvahisseurs.md) :x:
-* Objectif n°3
+* Objectif n°3 :x:
    - [Fonctionnalité n°13](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S13_SpaceInvadersDeReve.md) :x:
 
 ### Semaine 27
