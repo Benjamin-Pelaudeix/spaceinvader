@@ -165,4 +165,7 @@ Aucune
 ``Collisions`` sont un aspect fondamental de tout jeu d'action ou d'animation qui prendront en paramètre 2 objets. Ces fonctions renverront simplement un booléen.
 
 ### Références
+
+Sujet SpaceInvaders créé par @iblasquez pour le compte du module M2104 de DUT Informatique : [sujet](https://github.com/iblasquez/tdd_spaceInvaders.git)
+
 Définition des **collisions** récupérée sur ce site : [jeux.developpez.com](https://jeux.developpez.com/tutoriels/theorie-des-collisions/)
