@@ -130,6 +130,26 @@ _Difficultés rencontrées :_
 
 Aucune
 
+#### 20/04/2020
+
+_Fonctionnalités implémentées :_
+
+* Fonctionnalité n°7 :
+   **Critères d'acceptances** : Détecter la fin du jeu lorsque le missile touche l'envahisseur.
+   
+_Modélisation UML :_
+
+![diagramme](/img/spaceinvaderF7.png)
+
+_Nuage de mots :_
+
+![mots F7](/img/motsF7.PNG)
+
+_Difficultés rencontrées :_
+
+Aucune
+
+
 ### Glossaire
 
 ``Vaisseau`` est un véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
