@@ -10,6 +10,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 - [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
+- Semaine 30
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Objectifs & Fonctionnalités
