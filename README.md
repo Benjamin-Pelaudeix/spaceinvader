@@ -10,7 +10,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 - [Semaine 28](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-28)
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
-- Semaine 30
+- [Semaine 30](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-30)
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Objectifs & Fonctionnalités
@@ -24,7 +24,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
    - [Fonctionnalité n°6](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S6_DetecterCollision.md) :white_check_mark:
    - [Fonctionnalité n°7](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S7_TerminerPartie.md) :white_check_mark:
 * Objectif n°2 :x:
-   - [Fonctionnalité n°8](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S8_TirerPlusieursMissiles.md) :x:
+   - [Fonctionnalité n°8](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S8_TirerPlusieursMissiles.md) :white_check_mark:
    - [Fonctionnalité n°9](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S9_EnvoyerLigneEnvahisseurs.md) :x:
    - [Fonctionnalité n°10](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S10_GererScore.md) :x:
    - [Fonctionnalité n°11](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S11_TirerMissileDepuisEnvahisseur.md) :x:
@@ -168,6 +168,26 @@ _Nuage de mots :_
 _Difficultés rencontrées :_
 
 Aucune
+
+###Semaine 30
+
+_Fonctionnalités implémentées :_
+
+* Fonctionnalité n°8 :
+    **Critères d'acceptances** : Permettre au vaisseau de tirer plusieurs missiles.
+    
+_Modélisation UML :_
+
+![diagramme](/img/spaceinavderS30.png)
+
+_Nuage de mots :_
+
+![mots F8](/img/motsF8.png)
+
+_Difficultés rencontrées :_
+
+La difficulté majeure que j'ai rencontrée sur cette fonctionnalité a été la mise en place de la *List*.
+
 
 
 ### Glossaire

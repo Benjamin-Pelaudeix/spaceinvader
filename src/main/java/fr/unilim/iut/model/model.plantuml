@@ -10,7 +10,6 @@ title __MODEL's Class Diagram__\n
           - collisionSpritesEnBas()
           - collisionSpritesEnHaut()
       }
-
   }
   
 
@@ -29,6 +28,7 @@ title __MODEL's Class Diagram__\n
           {static} + MISSILE_HAUTEUR : int
           {static} + MISSILE_LONGUEUR : int
           {static} + MISSILE_VITESSE : int
+          {static} + TEMPS_ENTRE_DEUX_MISSILES : int
           {static} + VAISSEAU_HAUTEUR : int
           {static} + VAISSEAU_LONGUEUR : int
           {static} + VAISSEAU_VITESSE : int
@@ -113,10 +113,12 @@ title __MODEL's Class Diagram__\n
           ~ finDePartie : boolean
           ~ hauteur : int
           ~ longueur : int
+          ~ missiles : List<Missile>
+          - cooldownMissile : long
           + SpaceInvaders()
+          + aDesMissile()
           + aUnEnvahisseur()
           + aUnEnvahisseurQuiOccupeLaPosition()
-          + aUnMissile()
           + aUnVaisseau()
           + aUnVaisseauQuiOccupeLaPosition()
           + deplacerEnvahisseurVersLaDroite()
@@ -137,6 +139,7 @@ title __MODEL's Class Diagram__\n
           + recupererMarqueDeLaPosition()
           + recupererMissile()
           + recupererVaisseau()
+          + supprimerMissilesHorsEspaceJeu()
           + tirerUnMissile()
           + toString()
           - aUnMissileQuiOccupeLaPosition()
@@ -184,7 +187,6 @@ title __MODEL's Class Diagram__\n
   fr.unilim.iut.model.SpaceInvaders .up.|> fr.unilim.iut.moteurjeu.Jeu
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Collision : collision
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Envahisseur : envahisseur
-  fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Missile : missile
   fr.unilim.iut.model.SpaceInvaders o-- fr.unilim.iut.model.Vaisseau : vaisseau
   fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Dimension : dimension
   fr.unilim.iut.model.Sprite o-- fr.unilim.iut.model.Position : origine
