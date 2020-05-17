@@ -11,6 +11,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
 - [Semaine 30](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-30)
+- [Semaine 31 & 32](...)
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Objectifs & Fonctionnalités
@@ -169,7 +170,7 @@ _Difficultés rencontrées :_
 
 Aucune
 
-###Semaine 30
+### Semaine 30
 
 _Fonctionnalités implémentées :_
 
@@ -188,7 +189,9 @@ _Difficultés rencontrées :_
 
 La difficulté majeure que j'ai rencontrée sur cette fonctionnalité a été la mise en place de la *List*.
 
+### Semaine 31 & 32
 
+En cours
 
 ### Glossaire
 
