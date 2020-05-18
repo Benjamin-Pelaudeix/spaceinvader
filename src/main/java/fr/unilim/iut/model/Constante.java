@@ -21,8 +21,9 @@ public class Constante {
 
     public static final int ENVAHISSEUR_LONGUEUR = 25;
     public static final int ENVAHISSEUR_HAUTEUR = 25;
-    public static final int ENVAHISSEUR_VITESSE = 5;
+    public static final int ENVAHISSEUR_VITESSE = 3;
 
     public static final int TEMPS_ENTRE_DEUX_MISSILES = 250;
-    public static final int NOMBRE_ENVAHISSEURS = 2;
+    public static final int NOMBRE_ENVAHISSEURS = 5;
+    public static final int ESPACE_ENTRE_ENVAHISSEURS = 20;
 }
