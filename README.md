@@ -11,7 +11,8 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 - [Semaine 29](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-29)
 - [Vacances](https://github.com/Benjamin-Pelaudeix/spaceinvader#vacances)
 - [Semaine 30](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-30)
-- [Semaine 31 & 32](...)
+- [Semaine 31](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-31)
+- [Semaine 32](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-32)
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Objectifs & Fonctionnalités
@@ -26,7 +27,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
    - [Fonctionnalité n°7](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S7_TerminerPartie.md) :white_check_mark:
 * Objectif n°2 :x:
    - [Fonctionnalité n°8](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S8_TirerPlusieursMissiles.md) :white_check_mark:
-   - [Fonctionnalité n°9](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S9_EnvoyerLigneEnvahisseurs.md) :x:
+   - [Fonctionnalité n°9](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S9_EnvoyerLigneEnvahisseurs.md) :arrow_left:
    - [Fonctionnalité n°10](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S10_GererScore.md) :x:
    - [Fonctionnalité n°11](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S11_TirerMissileDepuisEnvahisseur.md) :x:
    - [Fonctionnalité n°12](https://github.com/iblasquez/tdd_spaceInvaders/blob/master/enonces/SpaceInvaders_S12_EnvoyerHordeEnvahisseurs.md) :x:
@@ -189,10 +190,21 @@ _Difficultés rencontrées :_
 
 La difficulté majeure que j'ai rencontrée sur cette fonctionnalité a été la mise en place de la *List*.
 
-### Semaine 31 & 32
+### Semaine 31
 
-En cours
+_Fonctionnalités implémentées :_
 
+* Fonctionnalité n°9 (Toujours en implémentation cette semaine)
+   **Critères d'acceptances** : Placer une ligne d'envahisseurs et les faire bouger automatiquement sur l'espace de jeu.
+   
+_Difficultés rencontrées :_
+
+Je n'ai pas réussi à implémenter toute la fonctionnalité n°9 à cause des déplacements des envahisseurs. Je travaille encore sur ce point.
+
+### Semaine 32
+
+_En cours_
+   
 ### Glossaire
 
 :airplane: ``Vaisseau`` est un véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
