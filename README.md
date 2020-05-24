@@ -13,6 +13,7 @@ Mini-projet "Space Invaders" développé en Java dans le cadre du module de Conc
 - [Semaine 30](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-30)
 - [Semaine 31](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-31)
 - [Semaine 32](https://github.com/Benjamin-Pelaudeix/spaceinvader#semaine-32)
+- [Semaine 33]()
 - [Glossaire](https://github.com/Benjamin-Pelaudeix/spaceinvader#glossaire)
 
 ### Objectifs & Fonctionnalités
@@ -203,6 +204,28 @@ Je n'ai pas réussi à implémenter toute la fonctionnalité n°9 à cause des d
 
 ### Semaine 32
 
+_Fonctionnalités implémentées :_
+
+* Fonctionnalité n°9 (Fin de l'implémentation)
+
+    **Critères d'acceptances** : Placer une ligne d'envahisseurs et les faire bouger automatiquement sur l'espace de jeu.
+    
+_Modélisation UML :_
+
+:warning: Changement du logiciel de modélisation UML
+
+![Diagramme](/img/spaceinvadersS31-32.png)
+    
+_Nuage de mots :_
+
+![Mots](/img/motsF9.png)
+    
+_Difficultés rencontrées :_
+
+Aucune
+
+### Semaine 33
+
 _En cours_
    
 ### Glossaire
@@ -229,6 +252,6 @@ IDE utilisé pour ce projet :arrow_right: [IntelliJ](https://www.jetbrains.com/f
 
 JDK utilisé pour ce projet :arrow_right: [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
 
-Générateur de diagramme UML utilisé :arrow_right: [Plant UML pour IntelliJ](https://plugins.jetbrains.com/plugin/7017-plantuml-integration).
+Générateur de diagramme UML utilisé :arrow_right: [Générateur UML intégré à IntelliJ Ultimate](https://www.jetbrains.com/fr-fr/idea/download/#section=windows).
 
 Générateur de nuage de mots utilisé :arrow_right: [Source Code Word Cloud Generator](https://github.com/iblasquez/enseignement-iut-m2104-conception/blob/master/ressources/Word%20Cloud%20Generator.zip)
